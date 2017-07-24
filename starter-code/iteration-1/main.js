@@ -1,17 +1,20 @@
 var tasks = [];
+
 function addTask(task) {
-    tasks.push(task);
-    console.log("Insert task");
-    return tasks.length;
+  tasks.push(task);
+  console.log("Insert task");
+  return tasks.length;
 }
+
 function listAllTasks() {
-    tasks.forEach(function (a) {
-        console.log(a);
-    });
+  tasks.forEach(function(a) {
+    console.log(a);
+  });
 }
+
 function deleteTask(task) {
-    var dtask = tasks.indexOf(task);
-    return tasks.splice(dtask, 1).length;
+  var dtask = tasks.indexOf(task);
+  return tasks.splice(dtask, 1).length;
 }
 console.log("Number of items:", addTask('This is our first task'));
 console.log("Number of items:", addTask('Eat pizza 🍕 yummy!!!'));
